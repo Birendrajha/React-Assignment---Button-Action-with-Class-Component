@@ -11,7 +11,7 @@ class App extends Component {
 		this.showPara= this.showPara.bind(this);
 	};
 	
-   showPara(){
+   showPara=()=>{
 	   this.setState({
 		   ParaShow:true
 	   })
