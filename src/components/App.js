@@ -4,11 +4,14 @@ import '../styles/App.css';
 class App extends Component {
     constructor(props) {
 		super(props);
+		this.state={
+			parag: "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
+		}
 	};
-
+	
 
 renderpara =()=>{
-	    document.getElementById(paraf).innerText=this.props.children
+	    document.getElementById(para).innerText=this.state.parag;
 }
 
 
@@ -17,7 +20,7 @@ renderpara =()=>{
     		<div id="main">
 				{ /* Do not remove this main div!! */ }
 				<button id="click" onClick={this.renderpara}>render para</button>
-				 <p id="paraf"></p>
+				<p id="para"></p>
     		</div>
     	);
     }
