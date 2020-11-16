@@ -22,11 +22,10 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-				{ /* Do not remove this main div!! */ }
+				
 				<button id="click" onClick={this.showPara}>click!</button>
 				{this.state.ParaShow ? (<p id="para"> Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy
-</p>)
-:null}
+</p>):null}
 
     		</div>
     	);
