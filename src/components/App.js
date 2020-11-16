@@ -11,7 +11,7 @@ class App extends Component {
 	
 
 renderpara =()=>{
-	    document.getElementById(para).innerText=this.state.parag;
+	    document.getElementById('para').innerText=this.state.parag;
 }
 
 
